@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T08:54:27.466Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="jtnwA-BvT973mQps1EAD" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T08:56:20.633Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ty6a6pMTRjaKikhy2S1a" version="24.0.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1674" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -103,6 +103,9 @@
         </mxCell>
         <mxCell id="vq_UEweOmZDO1xIOBb29-35" value="结束" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="205" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vq_UEweOmZDO1xIOBb29-37" value="创建token后会同时保存在redis和mysql中，以后会优先从redis中拿数据，Redis中不存在再从mysql中拿数据" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="790" width="80" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
