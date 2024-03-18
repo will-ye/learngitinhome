@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T09:30:43.381Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="o_p0Qw_8YBNmVcsSeFNn" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T09:35:32.590Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="X95WPxKGEOy2ZRXFcqK6" version="24.0.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,8 +75,8 @@
         <mxCell id="ojOlT_hlwT6HIEAQez5l-19" value="返回401结束" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="660" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ojOlT_hlwT6HIEAQez5l-22" value="" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="500" y="760" width="120" height="60" as="geometry" />
+        <mxCell id="ojOlT_hlwT6HIEAQez5l-22" value="基于Xyc-Login-User中phone来构建登录用户" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="890" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ojOlT_hlwT6HIEAQez5l-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ojOlT_hlwT6HIEAQez5l-25">
           <mxGeometry relative="1" as="geometry">
@@ -125,8 +125,20 @@
         <mxCell id="ojOlT_hlwT6HIEAQez5l-36" value="返回401结束" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="10" y="760" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ojOlT_hlwT6HIEAQez5l-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ojOlT_hlwT6HIEAQez5l-41" target="ojOlT_hlwT6HIEAQez5l-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ojOlT_hlwT6HIEAQez5l-41" value="基于 token 构建登录用户" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="260" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ojOlT_hlwT6HIEAQez5l-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ojOlT_hlwT6HIEAQez5l-45" target="ojOlT_hlwT6HIEAQez5l-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ojOlT_hlwT6HIEAQez5l-45" value="设置当前登录用户到上下文，后续用到userId可以直接获取" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ojOlT_hlwT6HIEAQez5l-49" value="执行业务逻辑接口并结束" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="1109" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
