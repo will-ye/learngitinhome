@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T03:07:18.184Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="eh0SHyAHMjIHOLGs4bOX" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T03:15:24.417Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="DBPZjwSIJ4K0hUwxis-u" version="24.0.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -134,8 +134,50 @@
         <mxCell id="zftXcXtOyWCV9swfXEnX-43" value="发票处理逻辑" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="65" y="1140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="zftXcXtOyWCV9swfXEnX-46" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="315" y="1290" width="80" height="80" as="geometry" />
+        <mxCell id="zftXcXtOyWCV9swfXEnX-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-50" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zftXcXtOyWCV9swfXEnX-49">
+          <mxGeometry x="-0.2" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-46" value="30天内是否已采集" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="1290" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-51" target="zftXcXtOyWCV9swfXEnX-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-51" value="重新请求接口数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="295" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-52" target="zftXcXtOyWCV9swfXEnX-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-52" value="返回数据放入mongodb中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="295" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-54" target="zftXcXtOyWCV9swfXEnX-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-54" value="重新按照逻辑计算指标存库生成新的dataId" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="295" y="1740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-56" value="更新服务状态，生成报告" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="295" y="1880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zftXcXtOyWCV9swfXEnX-61" target="zftXcXtOyWCV9swfXEnX-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zftXcXtOyWCV9swfXEnX-61" value="查询最新的dataId" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="1600" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
